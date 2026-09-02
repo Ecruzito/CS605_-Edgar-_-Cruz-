@@ -1,6 +1,5 @@
 # These notes are to guide and understand the purpose of the code
 
-
 print ("Greetings: Welcome to the Simple Operation Calculator!")
 
 user_response = "yes"
