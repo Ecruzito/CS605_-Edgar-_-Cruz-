@@ -1,0 +1,3 @@
+This script implements a simple calculator that performs addition, subtraction, multiplication, 
+and division based on user input. It includes input validation for division by zero and 
+allows repeated calculations until the user decides to stop. The calculator uses while loop for unlimited attempts. 
