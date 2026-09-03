@@ -2,7 +2,6 @@
 
 print ("Greetings: Welcome to the Simple Operation Calculator!")
 
-
 user_response = "yes"
 while user_response == "yes":       #use while loop because no constraint on when to stop-> unlimited times
     first_number= float(input ("Enter the first number:"))   # get data from the user
