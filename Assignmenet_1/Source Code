@@ -1,0 +1,43 @@
+# These notes are to guide and understand the purpose of the code
+
+
+print ("Greetings: Welcome to the Simple Operation Calculator!")
+
+user_response = "yes"
+while user_response == "yes":       #use while loop because no constraint on when to stop-> unlimited times
+    first_number= float(input ("Enter the first number:"))   # get data from the user
+    second_number = float(input ("Enter the first number:"))  # use float to run integers, decimals , negative values
+
+    print()  # this help by spacing out the output so everything is not too clumpy (together)
+
+    print ("Enter the operation value you want to execute: ")  # provide operation options for user
+    print ("1: Addition")
+    print ("2: Subtraction")
+    print ("3: Multiplication")
+    print ("4: Division")
+
+    operation = input ("Select an operation please: ")      #provide if-elif statements to run what user inputs
+
+    if operation == "1":
+        print ("Result: " , first_number, "+" , second_number, "=" , first_number + second_number)
+      # this code will display the word result and the two numbers plus operation and outcome as well
+    elif operation == "2":
+        print ("Result: " , first_number, "-" , second_number, "=" , first_number - second_number)
+
+    elif operation == "3":
+        print ("Result: " , first_number, "*" , second_number, "=" , first_number * second_number)
+
+    elif operation == "4":
+        if first_number == 0 and second_number == 0: # create conditions for undefine and dividing by 0 situations
+            print("Result: 0 / 0 = undefined")
+        elif second_number == 0:
+            print("Result:", first_number, "/", second_number, "= 0")
+        else:
+            print("Result:", first_number, "/", second_number, "=", first_number / second_number)
+
+    user_response = input(" Do you want to perform another calculation? "). lower().strip()
+    # used lower () to make user input data into lowercase so program can run. The same with strip ()
+    # in case user includes spaces in the input as well
+
+print ("Goodbye! Have a great day!")  # careful with the indention, no indention needed here
+
